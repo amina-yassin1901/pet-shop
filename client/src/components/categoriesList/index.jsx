@@ -3,8 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../redux/slices/categoriesSlice/categoriesSlice";
 import { Link } from "react-router-dom";
-
-function CategoriesPage() {
+function CategoriesList() {
   const dispatch = useDispatch();
 
   const { categories, loading, error } = useSelector(
@@ -17,13 +16,20 @@ function CategoriesPage() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-
   return (
-    <div className={styles.categories}>
+    <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Categories</h2>
+        <div className={styles.fullTitle}>
+          <h3 className={styles.title}>Categories</h3>
+          <div className={styles.lineLink}>
+            <span className={styles.line}></span>
+            <a className={styles.link} href="/categories">
+              All categories{" "}
+            </a>
+          </div>
+        </div>
         <ul className={styles.list}>
-          {categories.map((category) => (
+          {categories.slice(0, 4).map((category) => (
             <li key={category.title} className={styles.item}>
               <Link to={`/categories/${category.id}`}>
                 <img
@@ -37,7 +43,7 @@ function CategoriesPage() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
-export default CategoriesPage;
+export default CategoriesList;
