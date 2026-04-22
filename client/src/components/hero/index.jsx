@@ -10,7 +10,10 @@ function Hero() {
         style={{ backgroundImage: `url(${heroImg})` }}
       >
         <h2 className={styles.title}>Amazing Discounts on Pets Products!</h2>
-        <button onClick={() => navigate("/sales")} className={styles.btn}>
+        <button
+          onClick={() => navigate("/products/sale")}
+          className={styles.btn}
+        >
           Check out
         </button>
       </div>

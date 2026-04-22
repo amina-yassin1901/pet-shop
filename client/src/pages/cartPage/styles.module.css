@@ -1,0 +1,192 @@
+.page {
+  width: 100%;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 40px 40px 90px 40px;
+  margin: 0 auto;
+}
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  white-space: nowrap;
+}
+.fullTitle {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.line {
+  border: 1px solid #ddd;
+  max-width: 682px;
+  width: 100%;
+  height: 0px;
+}
+.link {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 126%;
+  text-align: center;
+  color: #8b8b8b;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.lineLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+.price {
+  display: flex;
+  gap: 32px;
+  align-items: end;
+  position: relative;
+}
+.newPrice {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+}
+.oldPrice {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: #8b8b8b;
+}
+.priceOnly {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+}
+.flexBox {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.image {
+  border: 1px solid #ddd;
+  border-radius: 12px 0 0 12px;
+  width: 200px;
+  height: 180px;
+}
+.item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  max-width: 780px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.closeIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.contentPart {
+  padding: 32px 32px 32px 0px;
+  width: 100%;
+}
+.orderDetails {
+  background: #f1f3f4;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.orderTitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.stats {
+  margin-bottom: 32px;
+}
+
+.itemsCount {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: #8b8b8b;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 12px;
+}
+
+.totalLabel {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  color: #8b8b8b;
+}
+
+.totalValue {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+}
+
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px 32px;
+  font-size: 20px;
+  background-color: #fff;
+  color: #8b8b8b;
+}
+
+.orderBtn {
+  background: #0d50ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 32px;
+  transition: 0.3s;
+  margin-top: 16px;
+}
+
+.orderBtn:hover {
+  opacity: 0.9;
+}
+.flex {
+  display: flex;
+  gap: 32px;
+  align-items: start;
+}
+.goBack {
+  background: #0d50ff;
+  border-radius: 6px;
+  padding: 16px 56px;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+  margin-top: 32px;
+}

@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../redux/slices/categoriesSlice/categoriesSlice";
 import { Link } from "react-router-dom";
+import { API_URL } from "../../contacts/api";
+import Breadcrumbs from "../../components/appBreadcrumbs/index";
 
 function CategoriesPage() {
   const dispatch = useDispatch();
@@ -21,14 +23,15 @@ function CategoriesPage() {
   return (
     <div className={styles.categories}>
       <div className={styles.container}>
+        <Breadcrumbs />
         <h2 className={styles.title}>Categories</h2>
         <ul className={styles.list}>
           {categories.map((category) => (
             <li key={category.title} className={styles.item}>
-              <Link to={`/categories/${category.id}`}>
+              <Link to={`/products/category/${category.id}`}>
                 <img
                   className={styles.img}
-                  src={`http://localhost:3333${category.image}`}
+                  src={`${API_URL}${category.image}`}
                   alt={category.title}
                 />
                 <p className={styles.itemTitle}>{category.title}</p>

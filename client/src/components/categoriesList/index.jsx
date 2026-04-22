@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCategories } from "../../redux/slices/categoriesSlice/categoriesSlice";
 import { Link } from "react-router-dom";
+import { API_URL } from "../../contacts/api";
 function CategoriesList() {
   const dispatch = useDispatch();
 
@@ -24,17 +25,17 @@ function CategoriesList() {
           <div className={styles.lineLink}>
             <span className={styles.line}></span>
             <a className={styles.link} href="/categories">
-              All categories{" "}
+              All categories
             </a>
           </div>
         </div>
         <ul className={styles.list}>
           {categories.slice(0, 4).map((category) => (
             <li key={category.title} className={styles.item}>
-              <Link to={`/categories/${category.id}`}>
+              <Link to={`/products/category/${category.id}`}>
                 <img
                   className={styles.img}
-                  src={`http://localhost:3333${category.image}`}
+                  src={`${API_URL}${category.image}`}
                   alt={category.title}
                 />
                 <p className={styles.itemTitle}>{category.title}</p>

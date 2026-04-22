@@ -1,0 +1,79 @@
+.img {
+  border-radius: 12px;
+  width: 316px;
+  height: 284px;
+}
+.itemTitle {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  max-width: 316px;
+  border-radius: 12px;
+  position: relative;
+}
+.content {
+  padding: 20px 32px 32px 32px;
+}
+.badge {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  background-color: #0d50ff;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.03em;
+}
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.btnPosition {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 89%;
+}
+
+.item:hover .btnPosition {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.item {
+  transition: transform 0.2s ease;
+}
+
+.price {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+.newPrice {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+}
+.oldPrice {
+  text-decoration: line-through;
+  color: #8b8b8b;
+}
+.priceOnly {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+}

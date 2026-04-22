@@ -1,13 +1,14 @@
-import styles from "./styles.module.css";
 import Hero from "../../components/hero";
+import SaleList from "../../components/saleList";
 import CategoriesList from "../../components/categoriesList";
 import DiscountForm from "../../components/discountFrom";
 function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <Hero />
       <CategoriesList />
       <DiscountForm />
+      <SaleList />
     </div>
   );
 }

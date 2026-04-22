@@ -1,0 +1,97 @@
+.product {
+  width: 100%;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 40px 80px 40px;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  gap: 32px;
+  align-items: end;
+  position: relative;
+}
+.newPrice {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+}
+.oldPrice {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration: line-through;
+  color: #8b8b8b;
+}
+.priceOnly {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+}
+.badge {
+  position: relative;
+  top: -50%;
+  left: -16px;
+  background-color: #0d50ff;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 8px;
+  letter-spacing: 0.03em;
+}
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.03em;
+}
+.descr {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+}
+.img {
+  border-radius: 12px;
+  width: 548px;
+  height: 572px;
+}
+.context {
+  max-width: 548px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+.btnsBox {
+  display: grid;
+  width: 100%;
+  gap: 32px;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-template-columns: 1fr 1.5fr;
+}
+.btnDiv {
+  width: 100%;
+}
+.readMoreBtn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #282828;
+  margin-top: 32px;
+}

@@ -1,0 +1,16 @@
+.btn {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 17px;
+  color: #8b8b8b;
+}
+.count {
+  padding: 16px 38px;
+}
+.countEl {
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px;
+}
