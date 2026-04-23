@@ -1,7 +1,7 @@
 import Hero from "../../components/hero";
 import SaleList from "../../components/saleList";
 import CategoriesList from "../../components/categoriesList";
-import DiscountForm from "../../components/discountFrom";
+import DiscountForm from "../../components/discountForm";
 function Home() {
   return (
     <div>
